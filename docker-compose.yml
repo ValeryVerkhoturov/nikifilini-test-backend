@@ -1,0 +1,11 @@
+version: '3.9'
+
+services:
+  backend:
+    build:
+      context: .
+    ports:
+      - 3000:3000
+    environment:
+      RETAIL_URL: ${RETAIL_URL}
+      RETAIL_KEY: ${RETAIL_KEY}
